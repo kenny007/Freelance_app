@@ -36,10 +36,9 @@
 					<span class="image fit primary"><img src="{% static 'freelance_app/pic01.jpg' %}" alt="" /></span>
 					<div class="content">
 						<header class="major">
-							<h2>SEO Manager</h2>
+							<h2>{{ job_listings.first.title }}</h2>
 						</header>
-						<p>Hello, we are looking for a proficient SEO Manager for our new office in Tallinn. If you are
-                        interested kindly send an e-mail</p>
+						<p> {{ job_listings.first.description }}</p>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</div>
@@ -51,9 +50,9 @@
 					<span class="image fit primary"><img src="{% static 'freelance_app/pic01.jpg' %}" alt="" /></span>
 					<div class="content">
 						<header class="major">
-							<h2>Software Developer</h2>
+							<h2>{{ job_listings.last.title }}</h2>
 						</header>
-						<p>Hello, we are looking for an Senior full-stack developer</p>
+						<p>{{ job_listings.last.description }}</p>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</div>
